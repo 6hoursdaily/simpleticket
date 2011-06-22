@@ -1,27 +1,20 @@
-<h1>Listing issues</h1>
+<h1>All Tickets</h1>
 
-<table>
-  <tr>
-    <th>Summary</th>
-    <th>Description</th>
-    <th>Fixed</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="ticket-table">
+	<div class="ticket-table-header">
+		<span class="ticket-id">Ticket #</span>
+		<span class="ticket-summary">Summary</span>
+		<span class="ticket-creation-date">Created On</span>
+		<span class="ticket-status">Status</span>
+	</div>
+	<%= @issues.each do |issue| %>
+	<div class="ticket-summary-line">
+		<span class="ticket-id"><%= link_to issue, issue.id %></span>
+		<span class="ticket-summary"><%= issue.summary_text %></span>
+		<span class="ticket-creation-date"><%= issue.created_at %></span>
+		<span class="ticket-status"><%= issue.status %></span>
+	</div>
+	<% end %>
+</div>
 
-<% @issues.each do |issue| %>
-  <tr>
-    <td><%= issue.summary %></td>
-    <td><%= issue.description %></td>
-    <td><%= issue.fixed %></td>
-    <td><%= link_to 'Show', issue %></td>
-    <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
-    <td><%= link_to 'Destroy', issue, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Issue', new_issue_path %>
+<%= link_to 'Create a new ticket...', new_issue_path %>
