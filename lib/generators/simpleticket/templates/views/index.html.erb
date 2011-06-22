@@ -9,7 +9,7 @@
 	</div>
 	<%= @issues.each do |issue| %>
 	<div class="ticket-summary-line">
-		<span class="ticket-id"><%= link_to issue, issue.id %></span>
+		<span class="ticket-id"><%= link_to issue.id, issue %></span>
 		<span class="ticket-summary"><%= issue.summary_text %></span>
 		<span class="ticket-creation-date"><%= issue.created_at %></span>
 		<span class="ticket-status"><%= issue.status %></span>
