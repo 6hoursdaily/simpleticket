@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name = "simpleticket"
-  s.version = "0.0.1.#{Time.now.strftime "%Y%m%d%H%M"}"
+  s.version = "0.0.1"
   s.summary = "A super-minimal issue tracker."
   s.authors = ['Rhys Copeland']
   s.email = 'rhys@iff-transponder.co.uk'
