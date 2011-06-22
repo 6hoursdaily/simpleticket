@@ -13,7 +13,7 @@ Add simpleticket to your bundlefile:
     # Or, if you want the bleeding edge, go straight from the GitHub repository:
     gem 'simpleticket', :git => 'git://github.com/rhyscopeland/simpleticket.git'
 
-Then run `bundle` in your app. 
+Then run `bundle install` in your app. 
 
 ## Usage
 
