@@ -1,0 +1,16 @@
+Description:
+    SimpleTicket is a super-minimal issue tracker that you can add to your 
+    application in order to allow users to raise bug reports and feature 
+    requests quickly and painlessly.
+
+Example:
+    rails generate simpleticket
+
+    This will create:
+        app/controllers/issues_controller.rb
+		app/models/issue.rb
+		app/views/issues/edit.html.erb
+		app/views/issues/index.html.erb
+		app/views/issues/new.html.erb
+		app/views/issues/show.html.erb
+		db/migrations/TIMESTAMP_create_issues.rb
