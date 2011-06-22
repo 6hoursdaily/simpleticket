@@ -1,0 +1,29 @@
+# SimpleTicket
+
+SimpleTicket is a super-minimalist issue tracker in the form of a Rails
+generator that you can add to your application. It enables users (and
+developers!) to quickly and painlessly enter bugs and feature requests.
+
+## Installation
+
+Add simpleticket to your bundlefile:
+
+    gem 'simpleticket'
+
+    # Or, if you want the bleeding edge, go straight from the GitHub repository:
+    gem 'simpleticket', :git => 'git://github.com/rhyscopeland/simpleticket.git'
+
+Then run `bundle` in your app. 
+
+## Usage
+
+It's a generator, so execute
+
+    rails generate simpleticket
+
+which will create the issue tracker, which can be viewed at `/issues`.
+
+## Todo
+
+  * Allow the path to be specified in the generator.
+
